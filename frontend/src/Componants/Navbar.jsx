@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logoSMIR from "/icons/namelogoWhite.png";
+import logoSMIR from "/icons/blacklogotext.png";
 
 const NavBar = () => {
     const [showPhoneNav, setShowPhoneNav] = useState(false);
@@ -20,7 +20,7 @@ const NavBar = () => {
     };
 
     return (
-        <div className="w-full navmain fixed top-0 bg-[#222222]">
+        <div className="w-full h-[65px] navmain fixed top-0 bg-[transparant] py-2 z-50">
             <div className="nav flex justify-between px-8" style={{ position: "relative", top: "0", transition: "background-color 0.3s ease", zIndex: "99", }}>
                 <div className="logo flex items-center gap-8">
                     <Link className="nav-link" to="/">
@@ -29,32 +29,32 @@ const NavBar = () => {
                     <div className="nav-links flex gap-8">
                         <div className="nav-item">
                             <Link className="nav-link" to="/">
-                                <p className="text-[#dddddd] text-lg">Home</p>
+                                <p className="text-[#222222] text-lg">Home</p>
                             </Link>
                         </div>
                         <div className="nav-item">
                             <Link className="nav-link" to="/shop">
-                                <p className="text-[#dddddd] text-lg">Shop</p>
+                                <p className="text-[#222222] text-lg">Shop</p>
                             </Link>
                         </div>
                         <div className="nav-item">
                             <Link className="nav-link" to="/BestSeller">
-                                <p className="text-[#dddddd] text-lg">Best Sellers</p>
+                                <p className="text-[#222222] text-lg">Best Sellers</p>
                             </Link>
                         </div>
                         <div className="nav-item">
                             <Link className="nav-link" to="/contact">
-                                <p className="text-[#dddddd] text-lg">Contact</p>
+                                <p className="text-[#222222] text-lg">Contact</p>
                             </Link>
                         </div>
                         <div className="nav-item">
                             <Link className="nav-link" to="/about">
-                                <p className="text-[#dddddd] text-lg">Our Story</p>
+                                <p className="text-[#222222] text-lg">Our Story</p>
                             </Link>
                         </div>
                         <div className="nav-item">
                             <Link className="nav-link" to="/blogs">
-                                <p className="text-[#dddddd] text-lg">Blog</p>
+                                <p className="text-[#222222] text-lg">Blog</p>
                             </Link>
                         </div>
                     </div>
@@ -62,24 +62,24 @@ const NavBar = () => {
                 <div className="cartoption !flex flex-row items-center gap-8">
                     <div className="nav-item">
                         <Link className="nav-link" to="/">
-                            <p className="text-[#dddddd] text-lg">CART</p>
+                            <p className="text-[#222222] text-lg">CART</p>
                         </Link>
                     </div>
                     <div className="nav-item">
                         <Link className="nav-link" to="/">
-                            <p className="text-[#dddddd] text-lg">LOGIN</p>
+                            <p className="text-[#222222] text-lg">LOGIN</p>
                         </Link>
                     </div>
                     <div className="nav-item">
                         <Link className="nav-link" to="/">
-                            <p className="text-[#dddddd] text-lg">REGISTER</p>
+                            <p className="text-[#222222] text-lg">REGISTER</p>
                         </Link>
                     </div>
                 </div>
 
                 {/* Phone Menu Button */}
                 <div className="MenuButtonNav lg:hidden flex items-center">
-                    <button className="text-xl p-4 text-[#dddddd]" onClick={togglePhoneNav}>
+                    <button className="text-xl p-4 text-[#222222]" onClick={togglePhoneNav}>
                         Menu
                     </button>
                 </div>
@@ -96,7 +96,7 @@ const NavBar = () => {
                                 </div>
 
                                 <div>
-                                    <button className="text-2xl font-bold p-4 text-[#dddddd]" onClick={togglePhoneNav}>
+                                    <button className="text-2xl font-bold p-4 text-[#222222]" onClick={togglePhoneNav}>
                                         Close
                                     </button>
                                 </div>
@@ -104,32 +104,32 @@ const NavBar = () => {
                             <div className="nav-router bg-[#222222]">
                                 <div className="nav-item mb-2 border-b-2 border-b-zinc-100">
                                     <Link className="nav-link" to="/" onClick={togglePhoneNav}>
-                                        <h1 className="text-2xl pl-8 py-4 text-[#dddddd]">Home</h1>
+                                        <h1 className="text-2xl pl-8 py-4 text-[#222222]">Home</h1>
                                     </Link>
                                 </div>
                                 <div className="nav-item mb-2 border-b-2 border-b-zinc-100">
                                     <Link className="nav-link" to="/shop" onClick={togglePhoneNav}>
-                                        <h1 className="text-2xl pl-8 py-4 text-[#dddddd]">Shop</h1>
+                                        <h1 className="text-2xl pl-8 py-4 text-[#222222]">Shop</h1>
                                     </Link>
                                 </div>
                                 <div className="nav-item mb-2 border-b-2 border-b-zinc-100">
                                     <Link className="nav-link" to="/BestSeller" onClick={togglePhoneNav}>
-                                        <h1 className="text-2xl pl-8 py-4 text-[#dddddd]">Best Sellers</h1>
+                                        <h1 className="text-2xl pl-8 py-4 text-[#222222]">Best Sellers</h1>
                                     </Link>
                                 </div>
                                 <div className="nav-item border-b-2 border-b-zinc-100">
                                     <Link className="nav-link" to="/contact" onClick={togglePhoneNav}>
-                                        <h1 className="text-2xl pl-8 py-4 text-[#dddddd]">Contact</h1>
+                                        <h1 className="text-2xl pl-8 py-4 text-[#222222]">Contact</h1>
                                     </Link>
                                 </div>
                                 <div className="nav-item border-b-2 border-b-zinc-100">
                                     <Link className="nav-link" to="/about" onClick={togglePhoneNav}>
-                                        <h1 className="text-2xl pl-8 py-4 text-[#dddddd]">Our Story</h1>
+                                        <h1 className="text-2xl pl-8 py-4 text-[#222222]">Our Story</h1>
                                     </Link>
                                 </div>
                                 <div className="nav-item border-b-2 border-b-zinc-100">
                                     <Link className="nav-link" to="/blogs" onClick={togglePhoneNav}>
-                                        <h1 className="text-2xl pl-8 py-4 text-[#dddddd]">Blog</h1>
+                                        <h1 className="text-2xl pl-8 py-4 text-[#222222]">Blog</h1>
                                     </Link>
                                 </div>
                             </div>
