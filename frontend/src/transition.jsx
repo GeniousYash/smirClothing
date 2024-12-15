@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import logoSmir from "/icons/nobgLogo.png"
+import logoSmir from "/icons/whitelogonobg.png"
 
 const transition = (OriginalComponent) => {
     return () => (
@@ -7,9 +7,9 @@ const transition = (OriginalComponent) => {
             <OriginalComponent />
             <motion.div
                 className="slide-in"
-                initial={{ scaleY: 0 }}
+                initial={{ scaleY: 1 }}
                 animate={{ scaleY: 0 }}
-                exit={{ scaleY: 1 }}
+                exit={{ scaleY: 0 }}
                 transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
                 style={{
                     position: 'fixed',
@@ -17,7 +17,7 @@ const transition = (OriginalComponent) => {
                     left: 0,
                     right: 0,
                     bottom: 0,
-                    backgroundColor: '#B5CFB7', // Adjust background color
+                    backgroundColor: '#222222', // Adjust background color
                     zIndex: 100, // Ensure it's above other content
                     display: 'flex',
                     justifyContent: 'center',
@@ -33,9 +33,9 @@ const transition = (OriginalComponent) => {
 
             <motion.div
                 className="slide-out"
-                initial={{ scaleY: 1 }}
+                initial={{ scaleY: 0 }}
                 animate={{ scaleY: 0 }}
-                exit={{ scaleY: 0 }}
+                exit={{ scaleY: 1 }}
                 transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
                 style={{
                     position: 'fixed',
@@ -43,7 +43,7 @@ const transition = (OriginalComponent) => {
                     left: 0,
                     right: 0,
                     bottom: 0,
-                    backgroundColor: '#B5CFB7',
+                    backgroundColor: '#222222',
                     zIndex: 100,
                     display: 'flex',
                     justifyContent: 'center',

@@ -23,7 +23,6 @@ function App() {
     return (
         <div className="w-full h-[100%]">
             <WhatsAppBtn />
-            {/* <Popup /> */}
             <AnimatePresence mode="wait">
                 <ScrollToTop />
                 <Routes location={location} key={location.pathname}>
@@ -35,7 +34,6 @@ function App() {
                     <Route path="/BestSeller" element={<BestSeller />} />
                 </Routes>
             </AnimatePresence>
-            {/* <Footer /> */}
         </div>
     )
 }

@@ -139,7 +139,7 @@ body {
   }
 
   .contact-clip-path-2 {
-    clip-path: polygon(29% 15%, 85% 30%, 50% 100%, 10% 64%);
+    clip-path: polygon(0% 0%, 95% 30%, 80% 100%, 10% 84%);
   }
 }
 

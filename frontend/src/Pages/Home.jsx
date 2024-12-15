@@ -9,7 +9,7 @@ import Hero from "../Comp/Hero";
 import NavBar from "../Comp/Navbar";
 // import Features from "../Comp/Features";
 // import Story from "../Comp/Story";
-// import Contact from "../Comp/Contact";
+import Contact from "../Comp/Contact";
 import Footer from "../Comp/Footer";
 
 
@@ -37,7 +37,7 @@ const Home = () => {
             <About />
             {/* <Features /> */}
             {/* <Story /> */}
-            {/* <Contact /> */}
+            <Contact />
             <Footer />
         </main>
     );

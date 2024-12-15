@@ -3,9 +3,11 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 import { TiLocationArrow } from "react-icons/ti";
 import { useEffect, useRef, useState } from "react";
+import "./hide.css"
 
 import Button from "./Button";
 import VideoPreview from "./VideoPreview";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -150,16 +152,16 @@ const Hero = () => {
                             Rev<b>o</b>luti<b>o</b><b>n</b>ize
                         </h1>
 
-                        <p className="mb-5 max-w-64 font-robert-regular text-blue-100">
-                            Enter the Metagame Layer <br /> Unleash the Play Economy
+                        <p className="parawatch mb-5 max-w-64 font-robert-regular text-blue-100">
+                            Enter in the Era of <br /> Fashion Revolution.
                         </p>
 
-                        <Button
+                        <Link to="/blogs"><Button
                             id="watch-trailer"
                             title="Watch trailer"
                             leftIcon={<TiLocationArrow />}
-                            containerClass="bg-yellow-300 flex-center gap-1"
-                        />
+                            containerClass="watch-tailerbtn bg-yellow-300 flex-center gap-1"
+                        /></Link>
                     </div>
                 </div>
             </div>

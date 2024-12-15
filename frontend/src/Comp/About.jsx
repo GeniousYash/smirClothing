@@ -21,6 +21,7 @@ const About = () => {
         });
 
         clipAnimation.to(".mask-clip-path", {
+            top: 0,
             width: "100vw",
             height: "100vh",
             borderRadius: 0,
@@ -40,7 +41,6 @@ const About = () => {
                 />
 
                 <div className="about-subtext">
-                    <p>Our collection will redefine fashion styling.</p>
                     <p className="text-gray-500">
                         Our bold and distinctive prints are crafted to stand out, blending modern aesthetics with timeless appeal.
                     </p>
@@ -54,7 +54,7 @@ const About = () => {
                         autoPlay
                         loop
                         muted
-                        className="absolute left-0 top-0 size-full object-cover"
+                        className="absolute !left-0 !top-0 size-full object-cover mb-[30px]"
                     ></video>
                 </div>
             </div>

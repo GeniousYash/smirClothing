@@ -95,12 +95,12 @@ const NavBar = () => {
 
                             <img src={logoSMIR} alt="logo" className="w-20" />
 
-                            <Button
+                            <Link to="/shop"><Button
                                 id="product-button"
                                 title="Products"
                                 rightIcon={<TiLocationArrow />}
                                 containerClass="bg-blue-50 md:flex hidden items-center justify-center gap-1"
-                            />
+                            /></Link>
                         </div>
 
                     </div>
@@ -110,32 +110,32 @@ const NavBar = () => {
                         <div className="nav-links flex gap-8">
                             <div className="nav-item">
                                 <Link className="nav-link" to="/">
-                                    <p className="text-[#ffffff] text-md">Home</p>
+                                    <p className="relative font-general text-md uppercase text-blue-50 after:absolute after:-bottom-0.5 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 dark:after:bg-white cursor-pointer">Home</p>
                                 </Link>
                             </div>
                             <div className="nav-item">
                                 <Link className="nav-link" to="/shop">
-                                    <p className="text-[#ffffff] text-md">Shop</p>
+                                    <p className="relative font-general text-md uppercase text-blue-50 after:absolute after:-bottom-0.5 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 dark:after:bg-white cursor-pointer">Shop</p>
                                 </Link>
                             </div>
                             <div className="nav-item">
                                 <Link className="nav-link" to="/BestSeller">
-                                    <p className="text-[#ffffff] text-md">Best Sellers</p>
+                                    <p className="relative font-general text-md uppercase text-blue-50 after:absolute after:-bottom-0.5 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 dark:after:bg-white cursor-pointer">Best-Sellers</p>
                                 </Link>
                             </div>
                             <div className="nav-item">
                                 <Link className="nav-link" to="/contact">
-                                    <p className="text-[#ffffff] text-md">Contact</p>
+                                    <p className="relative font-general text-md uppercase text-blue-50 after:absolute after:-bottom-0.5 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 dark:after:bg-white cursor-pointer">Contact</p>
                                 </Link>
                             </div>
                             <div className="nav-item">
                                 <Link className="nav-link" to="/about">
-                                    <p className="text-[#ffffff] text-md">Our Story</p>
+                                    <p className="relative font-general text-md uppercase text-blue-50 after:absolute after:-bottom-0.5 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 dark:after:bg-white cursor-pointer">Our-Story</p>
                                 </Link>
                             </div>
                             <div className="nav-item">
                                 <Link className="nav-link" to="/blogs">
-                                    <p className="text-[#ffffff] text-md">Blog</p>
+                                    <p className="relative font-general text-md uppercase text-blue-50 after:absolute after:-bottom-0.5 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 dark:after:bg-white cursor-pointer">Blog</p>
                                 </Link>
                             </div>
                             <div className="nav-item">
