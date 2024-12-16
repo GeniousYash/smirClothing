@@ -54,7 +54,7 @@ const About = () => {
                         autoPlay
                         loop
                         muted
-                        className="absolute !left-0 !top-0 size-full object-cover mb-[30px]"
+                        className="maskClipvdo absolute !left-0 !top-0 size-full object-cover mb-[30px]"
                     ></video>
                 </div>
             </div>
