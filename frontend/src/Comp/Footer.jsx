@@ -1,10 +1,10 @@
 import { FaFacebook, FaInstagram, FaWhatsapp, FaLinkedinIn } from "react-icons/fa";
 
 const socialLinks = [
-    { href: "https://discord.com", icon: <FaFacebook /> },
-    { href: "https://twitter.com", icon: <FaInstagram /> },
+    { href: "https://facebook.com", icon: <FaFacebook /> },
+    { href: "https://instagram.com", icon: <FaInstagram /> },
     { href: "https://whatsapp.com", icon: <FaWhatsapp /> },
-    { href: "https://medium.com", icon: <FaLinkedinIn /> },
+    { href: "https://linkedin.com", icon: <FaLinkedinIn /> },
 ];
 
 const Footer = () => {
@@ -15,7 +15,7 @@ const Footer = () => {
                     ©SMIR 2025. All rights reserved
                 </p>
 
-                <div className="flex justify-center gap-4  md:justify-start">
+                <div className="flex justify-center gap-4 md:justify-start">
                     {socialLinks.map((link, index) => (
                         <a
                             key={index}

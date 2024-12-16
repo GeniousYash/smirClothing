@@ -93,7 +93,7 @@ const NavBar = () => {
                     <div className="flex justify-between">
                         <div className="flex items-center gap-7">
 
-                            <img src={logoSMIR} alt="logo" className="w-20" />
+                            <Link to="/"><img src={logoSMIR} alt="logo" className="w-20" /></Link>
 
                             <Link to="/shop"><Button
                                 id="product-button"
